@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nina Vo Portfolio</title>
+  <link rel="stylesheet" href="css/style.css"/>
+  <link rel="stylesheet" href="css/nav_and_footer.css"/>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ephesis&family=Funnel+Sans:ital,wght@0,300..800;1,300..800&family=Leckerli+One&family=Sarina&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Gochi+Hand&family=Playwrite+HU:wght@100..400&family=Sunshiney&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+
+<body>
+  <!-- NAV -->
+  <header>
+    <nav class="nav-bar">
+      <div class="name">
+        <a href="index.html" aria-current="page">Nina Vo</a>
+      </div>
+
+      <input type="checkbox" id="menu-toggle" class="menu-toggle">
+
+      <label for="menu-toggle" class="nav-toggle">
+        <span class="sr-only">Toggle navigation menu</span>
+        <i class="ri-menu-line" aria-hidden="true"></i>
+      </label>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="#project">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+        <!-- INTRO -->
+    <section class="introduction">
+      <img src="img/chibi.png" alt="a cute chibi of Nina">
+      <h1>Welcome to Nina's World</h1>
+      <h2>A Game and Website Developer</h2>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about">
+      <div class="about-images">
+        <figure>
+          <img src="img/Nina.png" alt="A picture of Nina Vo" class="polaroid">
+          <img src="img/camera.png" alt="The camera that prints out image" class="camera">
+        </figure>
+      </div>
+      <div class="about-text">
+        <h2>About Me</h2>
+          <p>
+            Hi, I’m Nina Vo — a Vietnamese developer who brings dreams to life through games and websites. I create whimsical, heartfelt experiences that mix technology with storytelling and charm. From nostalgic cooking games to cozy community websites, I aim to make digital spaces feel warm, joyful, and personal.
+          </p>
+        <div class="contact-info">
+          <div class="contact-item">
+            <i class="ri-mail-fill"></i>
+            <a href="mailto:nhv2@sfu.ca">nhv2@sfu.ca</a>
+          </div>
+          <div class="contact-item">
+            <i class="ri-instagram-fill"></i>
+            <a href="https://www.instagram.com/hphuong.na/" target="_blank">@hphuong.na</a>
+          </div>
+          <div class="contact-item">
+            <i class="ri-facebook-box-fill"></i>
+            <a href="https://www.facebook.com/vo.nguyenhoaiphuong/" target="_blank">Phuong Vo</a>
+          </div>
+          <div class="contact-item">
+            <i class="ri-linkedin-box-fill"></i>
+            <a href="https://www.linkedin.com/in/nina-vo-1b059432a/" target="_blank">Nina Vo</a>
+          </div>
+        </div>
+      </div>
+        <div class="intro-button-wrapper">
+          <button onclick="location.href='about.html'">More About Me</button>
+        </div>
+    </section>
+
+
+    <!-- DIVIDER -->
+  <div class="project" id="project">
+    <div class="section-divider"></div>
+
+    <!-- HIGHLIGHT PROJECT -->
+    <section class="highlight">
+      <div class="highlight-content">
+        <h2>My Highlight Project</h2>
+        <div class="project">
+          <div class="project-frame-wrapper">
+            <div class="hanging-lines">
+              <div class="line left-line"></div>
+              <div class="line right-line"></div>
+              <div class="nail"></div>
+            </div>
+
+            <div class="project-frame">
+
+              <!-- Project 1 -->
+              <div class="project-info-wrapper">
+                <div class="project-polaroid">
+                  <div class="project-tape"></div>
+                    <img src="img/p1.PNG" alt="Cooking simulator for highlight project" />
+                    <div class="project-caption">Cooking simulator</div>
+                </div>
+
+                <div class="project-details">
+                  <div class="inner-border">
+                    <h3>Made From Mom Love</h3>
+                    <h4>Cooking Simulator</h4>
+                    <p>
+                      Step into the cozy kitchen and recreate nostalgic Vietnamese dishes - Banh Bot Loc with Mom using heart and memory.
+                      This simulator brings warmth, family, and food into one cute cooking experience.
+                    </p>
+                    <div class="highlight_button">
+                      <button onclick="location.href='P1.html'">See More</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+
+    <!-- DIVIDER -->
+    <div class="section-divider"></div>
+
+    <section class="more" id="hobbies">
+      <div class="more_cont">
+        <div class="left_cont">
+          <h2>More About me</h2>
+          <p>Besides coding, I’m also passionate about design, animation, and video editing. For most of my coding projects, I personally create all the visual assets—from illustrations to UI elements. I also enjoy exploring 3D modeling and crafting animations like typography effects, stop-motion, and more. On top of that, I love producing, editing videos and trying various stories and concepts</p>
+        </div>
+        <div class="right_cont">
+          <img src="img/Nina_1.png" alt="The drawing picture of Nina Vo">
+        </div>
+      </div>
+
+
+    </section>
+
+  </main>
+
+<!-- footer -->
+  <footer class="footer-bar">
+    <div class="footer-container">
+
+      <!-- Left: Name and contact -->
+      <div class="footer_col footer-left">
+        <a href="index.html" class="footer-name">Nina Vo</a>
+        <div class="footer-divider"></div>
+        <div class="footer-contact">
+          <a href="tel:+10124567890"><i class="ri-phone-line"></i> +1 (012)-456-7890</a>
+          <a href="mailto:nhv2@sfu.ca"><i class="ri-mail-line"></i> nhv2@sfu.ca</a>
+          <a href="https://www.google.com/maps/place/Vancouver,+BC" target="_blank" rel="noopener noreferrer">
+            <i class="ri-map-pin-line"></i> Vancouver, BC
+          </a>
+        </div>
+      </div>
+
+
+      <!-- Middle: 2 columns of links -->
+      <div class="footer_col footer-links-columns">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>          
+          <li><a href="#project">Projects</a></li>
+
+        </ul>
+        <ul>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="citation.html">Citation</a></li>
+        </ul>
+      </div>
+
+      <!-- Right: Social Icons -->
+      <div class="footer_col footer-socials">
+        <a href="mailto:nhv2@sfu.ca" aria-label="Email Nina Vo">
+          <i class="ri-mail-fill" aria-hidden="true"></i>
+        </a>
+        <a href="https://www.facebook.com/vo.nguyenhoaiphuong/" target="_blank" rel="noopener noreferrer" aria-label="Nina Vo on Facebook">
+          <i class="ri-facebook-box-fill" aria-hidden="true"></i>
+        </a>
+        <a href="https://www.instagram.com/hphuong.na/" target="_blank" rel="noopener noreferrer" aria-label="Nina Vo on Instagram">
+          <i class="ri-instagram-fill" aria-hidden="true"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/nina-vo-1b059432a/" target="_blank" rel="noopener noreferrer" aria-label="Nina Vo on LinkedIn">
+          <i class="ri-linkedin-box-fill" aria-hidden="true"></i>
+        </a>
+      </div>
+
+
+    </div>
+  </footer>
+
+<script src="main.js" defer></script>
+</body>
+</html>
