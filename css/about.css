@@ -1,0 +1,163 @@
+*, *::before, *::after { 
+  box-sizing: border-box; 
+}
+
+.about-page {
+  padding: 6rem 2rem;
+  background-color: #f7dae7;
+  font-family: "Funnel Sans", sans-serif;
+  color: #46011e;
+}
+
+.about-container { 
+  margin: 0 auto; 
+}
+
+.intro-flex {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+  margin-bottom: 4rem;
+}
+
+.intro-flex img {
+  object-fit: cover;
+  border: 0.25rem solid #fff4f7; 
+  box-shadow: 0 0.125rem 0.625rem rgba(0,0,0,.1);
+}
+
+.intro-text {
+  flex: 1;
+  min-width: 15.625rem; 
+}
+
+.intro-text h1 {
+  font-size: clamp(2.6rem, 4.5vw + 1rem, 5.4rem);
+  font-family: "Gochi Hand", cursive;
+  color: #863044;
+  margin-bottom: 1rem;
+}
+
+.intro-text .description {
+  font-size: clamp(1.4rem, 0.7vw + 1rem, 1.6rem);
+  line-height: 2.5rem;
+  margin-top: 2rem;
+}
+
+.section {
+  margin-bottom: 3.5rem;
+  background-color: #ffc0d3;
+  border: 0.3rem solid #863044;
+  border-radius: 1rem;
+  box-shadow: 0 0.8rem 1.5rem rgba(115, 5, 67, 0.15);
+  padding: 1.5rem;
+  position: relative;
+}
+
+.section::before {
+  content: "";
+  position: absolute;
+  inset: 1rem;
+  border: 0.3rem dashed #822e42;
+  border-radius: 0.8rem;
+  background-color: #fff8e8;
+  z-index: 0;
+}
+
+.section > * { 
+  position: relative; 
+  z-index: 1; 
+  padding: 1rem; 
+}
+.section ul   { 
+  padding: 1rem 1.5rem; 
+}
+.section li   { 
+  padding-left: 0.6rem; 
+  line-height: 2.4rem; 
+}
+
+.section h2 {
+  font-size: clamp(2rem, 2.5vw + 1rem, 3.6rem);
+  font-family: "Gochi Hand", cursive;
+  color: #863044;
+}
+.section p { 
+  font-size: clamp(1.4rem, 0.7vw + 1rem, 1.6rem); 
+  line-height: 2.4rem; 
+}
+
+.multi-column {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(12.5rem, 1fr));
+  gap: 1rem 3rem;
+  padding-left: 1.2rem;
+}
+
+.multi-column li { 
+  font-size: 1.5rem; 
+  list-style: disc; 
+  line-height: 2.2rem; 
+}
+
+@media (max-width: 44.375rem) {  
+  .intro-flex {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "title"
+      "photo"
+      "desc";
+    row-gap: 1rem;
+    justify-items: center;
+    text-align: center;
+  }
+  .intro-text { 
+    display: contents; 
+  }
+  .intro-text h1 { 
+    grid-area: title; margin: 0.4rem 0 0.6rem; 
+  }
+  .intro-flex img {
+    grid-area: photo;
+    width: min(100%, 20rem);           
+    height: auto;
+    margin: 0.2rem 0 0.4rem;
+  }
+  .intro-text .description { grid-area: desc; max-width: 48ch; margin: 0 auto; }
+}
+
+@media (max-width: 37.4375rem) { 
+  .about-page { 
+    padding: 4rem 1.5rem; 
+  }
+
+  .intro-flex img { 
+    width: min(100%, 23.75rem); 
+    height: auto; 
+  } 
+  .intro-text { 
+    flex: 1 1 16.25rem; 
+    min-width: 0; 
+  }      
+
+  .multi-column {
+    gap: 0.6rem 1.4rem;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  }
+  .multi-column li { 
+    font-size: clamp(1.3rem, 0.5vw + 1rem, 1.5rem); line-height: 1.5; 
+  }
+}
+
+@media (min-width: 37.5rem) and (max-width: 56.1875rem) { 
+  .about-page { padding: 5rem 2rem; }
+  .intro-flex { gap: 2.4rem; }
+  .intro-flex img { width: min(100%, 22.5rem); }   
+}
+
+@media (min-width: 56.25rem) {          
+  .intro-flex { flex-wrap: nowrap; gap: 3rem; }
+  .multi-column { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 0.8rem 2rem; }
+}
